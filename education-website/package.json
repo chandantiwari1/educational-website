@@ -1,0 +1,36 @@
+{
+  "name": "education-website",
+  "version": "1.0.0",
+  "type": "commonjs",
+  "description": "An educational website using the MERN stack",
+  "main": "app.js",
+  "repository": "git@github.com:ratul-devR/education-website.git",
+  "author": "Ratul <azammmgol@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "node app.js",
+    "dev": "NODE_ENV=development nodemon app.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.14"
+  },
+  "dependencies": {
+    "agenda": "^4.2.1",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "2.8.5",
+    "csvtojson": "^2.0.10",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "json2csv": "^5.0.6",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.0.12",
+    "mongoose-lean-defaults": "^2.0.1",
+    "multer": "^1.4.3",
+    "nodemailer": "^6.7.1",
+    "request": "^2.88.2",
+    "stripe": "^8.186.1"
+  }
+}
